@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Figuras geometricas / javascript</title>
+</head>
+<body>
+    
+    <nav>
+        <h1>Figuras geometricas</h1>
+        <p>First work on the practice basic javascript Course </p>
+    </nav>
+    
+    <section>
+        <div class="Cuadrado box">
+            <form action="cuadrado" id="container-inputs">
+                <div class="title">
+                    <img src="https://images.vexels.com/media/users/3/139344/isolated/preview/04f2d79f761a2663177cb6ab3700a484-icono-cuadrado-redondeado-cuadrado.png" alt="cuadrado" class="figure">
+                    <h3>Cuadrado</h3>
+                </div>
+                <label for="cuadrado" class="Rule">Escribe cuanto mide un lado de tu cuadrado</label>
+                <input type="number" id="cuadrado" class="Number-box">
+
+                <div class="botones">
+                    <button type="button" onclick="calcularperimetrocuadrado()">
+                        Calcular el perimetro
+                    </button>
+                    <button type="button" onclick="calcularareacuadrado()">
+                        Calcular el area
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="triangulo box">
+            <form action="triangulo" id="container-inputs">
+                <div class="title">
+                    <img src="http://assets.stickpng.com/thumbs/58afda92829958a978a4a688.png" alt="triangulo" class="figure">
+                    <h3>triangulo</h3>
+                </div>
+                <h4 class="Rule">Escribe cuanto mide cada apartado</h4>
+                <label for="Triangulo">lado1</label>
+                <input type="number" id="triangulo1" class="Number-box">
+
+                <label for="triangulo">lado2</label>
+                <input type="number" id="triangulo2" class="Number-box">
+
+                <label for="triangulo">Base</label>
+                <input type="number" id="triangulo3" class="Number-box">
+
+                <label for="triangulo">Altura</label>
+                <input type="number" id="triangulo4" class="Number-box">
+
+                <div class="botones">
+                    <button type="button" onclick="calcularperimetrotriangulo()">
+                        Calcular el perimetro
+                    </button>
+                    <button type="button" onclick="calcularareatriangulo()">
+                        Calcular el area
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="Circulo box">
+            <form action="circulo" id="container-inputs">
+                <div class="title">
+                    <img src="https://icones.pro/wp-content/uploads/2021/04/icone-cercle-noir.png" alt="circulo" class="figure">
+                    <h3>Circulo</h3>
+                </div>
+                <label for="circulo" class="Rule">Escribe cuanto mide el diametro de tu circulo</label>
+                <input type="number" id="circulo" class="Number-box">
+               
+                <div class="botones">
+                    <button type="button" onclick="calcularperimetrocirculo()">
+                        Calcular el perimetro
+                    </button>
+                    <button type="button" onclick="calcularareacirculo()">
+                        Calcular el area
+                    </button>
+
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <div class="alineador">
+        <footer>
+            <div class="resultadoP">
+                <P>Figura a analizar:</P>
+                <p class="figura" id="figure"></p>
+            </div>
+    
+            <div class="resultadoP">
+                <div class="texto">
+                    <p>El resultado del</p>
+                    <p>Perimetro es</p>
+                </div>
+                <p class="figura" id="rp"></p>
+            </div>
+    
+            <div class="resultadoP">
+                <div class="texto">
+                    <p>El resultado del</p>
+                    <p>Area es</p>
+                </div>
+                <p class="figura" id="ra"></p>
+            </div>
+                
+        </footer>
+        <p>Bryan Aranzales &copy; "Figure calculator"</p>
+    </div>
+    <script src="./figuras.js">
+    </script>
+</body>
+</html>
